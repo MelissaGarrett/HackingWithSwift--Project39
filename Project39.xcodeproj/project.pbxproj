@@ -14,6 +14,9 @@
 		010525611E70D9CE00E92C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0105255F1E70D9CE00E92C95 /* LaunchScreen.storyboard */; };
 		0105256C1E70D9CE00E92C95 /* Project39Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0105256B1E70D9CE00E92C95 /* Project39Tests.swift */; };
 		010525771E70D9CE00E92C95 /* Project39UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010525761E70D9CE00E92C95 /* Project39UITests.swift */; };
+		010525851E70DA2400E92C95 /* plays.txt in Resources */ = {isa = PBXBuildFile; fileRef = 010525841E70DA2400E92C95 /* plays.txt */; };
+		010525871E70DB1F00E92C95 /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010525861E70DB1F00E92C95 /* PlayData.swift */; };
+		010525881E70DE0800E92C95 /* PlayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010525861E70DB1F00E92C95 /* PlayData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		010525721E70D9CE00E92C95 /* Project39UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Project39UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		010525761E70D9CE00E92C95 /* Project39UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project39UITests.swift; sourceTree = "<group>"; };
 		010525781E70D9CF00E92C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		010525841E70DA2400E92C95 /* plays.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plays.txt; sourceTree = "<group>"; };
+		010525861E70DB1F00E92C95 /* PlayData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +104,10 @@
 			children = (
 				010525561E70D9CE00E92C95 /* AppDelegate.swift */,
 				010525581E70D9CE00E92C95 /* ViewController.swift */,
+				010525861E70DB1F00E92C95 /* PlayData.swift */,
 				0105255A1E70D9CE00E92C95 /* Main.storyboard */,
 				0105255D1E70D9CE00E92C95 /* Assets.xcassets */,
+				010525841E70DA2400E92C95 /* plays.txt */,
 				0105255F1E70D9CE00E92C95 /* LaunchScreen.storyboard */,
 				010525621E70D9CE00E92C95 /* Info.plist */,
 			);
@@ -235,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010525851E70DA2400E92C95 /* plays.txt in Resources */,
 				010525611E70D9CE00E92C95 /* LaunchScreen.storyboard in Resources */,
 				0105255E1E70D9CE00E92C95 /* Assets.xcassets in Resources */,
 				0105255C1E70D9CE00E92C95 /* Main.storyboard in Resources */,
@@ -262,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				010525871E70DB1F00E92C95 /* PlayData.swift in Sources */,
 				010525591E70D9CE00E92C95 /* ViewController.swift in Sources */,
 				010525571E70D9CE00E92C95 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0105256C1E70D9CE00E92C95 /* Project39Tests.swift in Sources */,
+				010525881E70DE0800E92C95 /* PlayData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

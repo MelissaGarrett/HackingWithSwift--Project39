@@ -28,9 +28,25 @@ class Project39UITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testInitialStateIsCorrect() {
+        let table = XCUIApplication().tables
+        XCTAssertEqual(table.cells.count, 7, "There should be 7 rows initially") // because of the "swift" filter
     }
     
-}
+    // When recording, use Mac's keyboard to enter text;
+    // After recording, can edit/simplify the generated text
+    func testUserFilteringByString() {
+        
+        let app = XCUIApplication()
+        app.buttons["Search"].tap()
+        
+        let filterAlert = app.alerts
+        let textField = filterAlert.textFields.element
+        textField.typeText("test") // the filter text entered
+        
+        filterAlert.buttons["Filter"].tap()
+        
+        XCTAssertEqual(app.tables.cells.count, 56, "There should be 56 words matching 'test'")
+    }
+    
+ }
